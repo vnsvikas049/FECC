@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background-color: rgb(92, 54, 54);
+            color: rgb(75, 204, 204);
+            height: 100px;
+            width: 100%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        .navbar{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: rgb(46, 23, 23);
+            color: rgb(202, 215, 227);
+            height: 45px;
+           margin-bottom: 15px;
+        }
+      img{
+        height: 100px;
+      }
+
+      main >  div {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        margin-bottom: 30px;
+      }
+      main >div>div{
+        text-align: center;
+      }
+      @media screen and (max-width:764px){
+        main >  div {
+            flex-direction: column;
+            
+        }
+        img{
+            width: 250px;
+            height: 250px;
+        }
+      }
+      @media screen and (max-width:764px){
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+            
+        }
+        .navbar > :nth-child(2){
+        display: none;
+        }
+        .navbar > :nth-child(3){
+        display: none;
+        }
+        .navbar > :nth-child(4){
+        display: none;
+        }
+        .navbar > :nth-child(5){
+        display: none;
+        }
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My PortFolio</h1>
+    </header>
+    <div class="navbar">
+        <div>Home</div>
+        <div>Education</div>
+        <div>Project</div>
+        <div>Skills</div>
+        <div>Contact Me</div>
+    </div>
+    <main>
+        <div>
+            <div><img  src="https://static.vecteezy.com/system/resources/previews/000/366/438/original/home-vector-icon.jpg" alt=""></div>
+
+            <div>
+                <h2 style="color: red;">Home</h2>
+                <p>This is a dummy description for the Home section.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div><img  src=https://www.pixelstalk.net/wp-content/uploads/2016/11/Education-Wallpapers-HD-For-Desktop-620x465.jpg"" alt=""></div>
+
+            <div>
+                <h2 style="color: green;">Education</h2>
+                <p>This is a dummy description for the Education section.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div><img  src="https://www.ntaskmanager.com/wp-content/uploads/2020/02/What-is-a-Project-1-scaled.jpg" alt=""></div>
+
+            <div>
+                <h2 style="color: yellow;">Project</h2>
+                <p>This is a dummy description for the Project section.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div><img  src=https://thumbs.dreamstime.com/z/skills-concept-education-training-improvement-people-get-knowledge-build-career-isolated-flat-vector-illustration-162956540.jpg?ct=jpeg"" alt=""></div>
+
+            <div>
+                <h2 style="color: blue;">Skills</h2>
+                <p>This is a dummy description for the Skills section.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        
+</body>
+</html>
